@@ -1,0 +1,24 @@
+version: "3"
+services:
+  memgraph:
+    image: "memgraph/memgraph:latest"
+    user: root
+    volumes:
+        - ./memgraph/entrypoint:/usr/lib/memgraph/entrypoint
+        - ./memgraph/import-data:/usr/lib/memgraph/import-data
+        - ./memgraph/mg_lib:/var/lib/memgraph
+        - ./memgraph/mg_log:/var/log/memgraph
+        - ./memgraph/mg_etc:/etc/memgraph
+    ports:
+      - "7687:7687"
+  bitclout:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"
+    environment:
+      MG_HOST: memgraph
+      MG_PORT: 7687
+    depends_on:
+      - memgraph
