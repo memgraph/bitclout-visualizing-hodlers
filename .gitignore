@@ -1,3 +1,6 @@
 mg_lib/
 mg_log/
 __pycache__/
+
+# Idea Intellij
+.idea
