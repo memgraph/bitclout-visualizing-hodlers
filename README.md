@@ -20,7 +20,7 @@ If we can predict which new connections are going to form we can generate a prof
 Being a company that values the power of graphs two algorithms immediately sprung to our mind.
 [Google's *PageRank* algorithm](https://en.wikipedia.org/wiki/PageRank), which ranks nodes in a graph by the value of their connections, and the [Louvain method](https://en.wikipedia.org/wiki/Louvain_method) for community detection featured in the image on the beginning of this article.
 The community detection algorithm tells us which audiences stick together in the BitClout community.
-Based on this if connections start forming to a new content creator from the majority of the community we can conclude the rest is probably going to follow.
+Based on this, if connections start forming to a new content creator from the majority of the community we can conclude the rest is probably going to follow.
 
 ## Ranking content creators using PageRank
 Here we have the top 10 users ranked by PageRank.
@@ -56,5 +56,14 @@ Thereafter it was smooth sailing.
 Or so we had thought.
 Analysing the data was a piece of cake.
 But presenting it, not so much.
-This is why we decided to split into three teams and try to visualize the data using three different mediums: [MemgraphLab](https://memgraph.com/product/lab), [D3.js](https://d3js.org/), and [ObservableHQ](https://observablehq.com/).
-Feel free to explore the code for the one that looks most intriguing!
+This is why we decided to split into three teams and tried to visualize the data using three different mediums: [MemgraphLab](https://memgraph.com/product/lab), [D3.js](https://d3js.org/), and [ObservableHQ](https://observablehq.com/).
+Feel free to explore the code for the visualization that looks most enticing!
+
+![placeholder for ObservableHQ](TODO)
+[ObservableHQ](https://observablehq.com/@mfrancekovic/bitclout-network) visualization
+
+![placeholder for D3 landing page](TODO)
+[D3.js](TODO) visualization
+
+![placeholder for MemgraphLab](TODO)
+[MemgraphLab](TODO) visualization
